@@ -1,5 +1,15 @@
 # Pyenv And Pip
 
+> 在安装之前先确认系统中有以下安装包
+
+```
+sudo apt-get update
+sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev \
+libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev \
+xz-utils tk-dev libffi-dev liblzma-dev python-openssl git
+
+```
+
 ## [pyenv](https://github.com/pyenv/pyenv) 
 
 python多版本管理工具
