@@ -4,7 +4,7 @@
 
 ```
 cd ~/server/Knowledge_Base
-nohup jupyter notebook --config jupyter_notebook_config.json &
+nohup jupyter notebook --config jupyter_notebook_config.json --allow-root &
 ```
 
 - Python
