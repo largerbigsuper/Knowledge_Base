@@ -1,0 +1,10 @@
+{
+    "NotebookApp": {
+      "password": "sha1:cb3ccd7d5aa2:a92733a9c1bf4e37e4aca1d112765c699e56a889",
+      "ip": "0.0.0.0",
+      "certfile": "/root/server/Knowledge_Base/www.lhxq.top/1_www.lhxq.top_bundle.crt",
+      "keyfile": "/root/server/Knowledge_Base/www.lhxq.top/2_www.lhxq.top.key",
+      "port": 9022,
+      "open_browser": false
+    }
+  }
