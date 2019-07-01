@@ -3,7 +3,7 @@
 > 在安装之前先确认系统中有以下安装包
 
 ```
-sudo apt-get update
+sudo apt-get update && \
 sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev \
 libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev \
 xz-utils tk-dev libffi-dev liblzma-dev python-openssl git
@@ -47,8 +47,18 @@ pyenv activate <环境名称>
 将需要安装的压缩包下载至 `～/.pyenv/cache` 目录下，有时候cache目录并不存在需要手动创建。然后执行 `pyenv install <Python-version>`
 
 ```shell
-mkdir -p ~/.pyenv/cache
-http://npm.taobao.org/mirrors/python/$PYTHON_VERSION/Python-$PYTHON_VERSION.tar.xz -p ~/.pyenv/cache && pyenv install $PYTHON_VERSION && pyenv virtualenv $ENV_NAME
+sudo apt-get update &&
+    sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev \
+        libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev \
+        xz-utils tk-dev libffi-dev liblzma-dev python-openssl git
+
+curl https://pyenv.run | bash
+
+export PYTHON_VERSION=3.5.3
+export ENV_NAME=gtpx
+wget http://npm.taobao.org/mirrors/python/$PYTHON_VERSION/Python-$PYTHON_VERSION.tar.xz -P ~/.pyenv/cache &&
+    pyenv install $PYTHON_VERSION &&
+    pyenv virtualenv $PYTHON_VERSION $ENV_NAME
 
 ```
 
