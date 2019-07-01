@@ -48,7 +48,8 @@ pyenv activate <环境名称>
 
 ```shell
 mkdir -p ~/.pyenv/cache
-http://npm.taobao.org/mirrors/python/$PYTHON_VERSION/Python-$PYTHON_VERSION.tar.xz -p ~/.pyenv/cache && pyenv install $PYTHON_VERSION && pyenv virtualenv $ENV_NAME
+
+wget http://npm.taobao.org/mirrors/python/$PYTHON_VERSION/Python-$PYTHON_VERSION.tar.xz -P ~/.pyenv/cache && pyenv install $PYTHON_VERSION && pyenv virtualenv $PYTHON_VERSION $ENV_NAME
 
 ```
 
