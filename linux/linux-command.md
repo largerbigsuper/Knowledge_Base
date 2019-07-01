@@ -12,5 +12,12 @@ Description:	CentOS Linux release 7.5.1804 (Core)
 Release:	7.5.1804
 Codename:	Core
 
+```
 
+
+## 查看上次重启时间
+
+```
+➜  ~ who -b
+reboot   ~        May 27 14:04
 ```
