@@ -18,3 +18,14 @@ $ git clone https://<user>:<password>@<gitserver>/<path>/<repo>.git
 ```
 
 [GIT: Calling git clone using password with special character](https://fabianlee.org/2016/09/07/git-calling-git-clone-using-password-with-special-character/)
+
+
+## git commit 修改编辑器
+
+```
+# 直接执行 git commmit 会弹出修改的内容信息，但是默认是nano编辑器，不习惯使用的话可以通过修改编辑器设置
+
+git config --global core.editor vim
+
+```
+
