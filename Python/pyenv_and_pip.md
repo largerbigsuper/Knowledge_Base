@@ -77,6 +77,13 @@ trusted-host = mirrors.aliyun.com
 ```
 
 
+```shell
+
+mkdir -p  ${HOME}/.pip
+echo -e  "[global]\nindex-url = http://mirrors.aliyun.com/pypi/simple/\n[install]\ntrusted-host = mirrors.aliyun.com\n" > ${HOME}/.pip/pip.conf
+
+```
+
 
 
 

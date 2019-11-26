@@ -1,0 +1,9 @@
+# 常用命令集合
+
+## 显示某个目录下所有的文件夹名称
+
+```shell
+
+ls -l  -I "_*" datamodels/|grep "^d" |awk '{print $9}'
+
+```
